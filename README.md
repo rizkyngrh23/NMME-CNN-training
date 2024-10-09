@@ -50,4 +50,4 @@ To evaluate the performance of multiple climate models for SPI prediction, focus
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/rizkyngrh23/NMME-CNN-train.git
+   git clone https://github.com/rizkyngrh23/NMME-CNN-training.git
