@@ -115,10 +115,10 @@ def accumulate_per_lead(model_files, output_directory):
 
 # Example usage
 model_files = [
-    'D:/Kuliah/Skripsi/Data_baru/maret/mar_canv2.nc',
-    'D:/Kuliah/Skripsi/Data_baru/maret/mar_cancm.nc',
-    'D:/Kuliah/Skripsi/Data_baru/maret/mar_IC3.nc',
-    'D:/Kuliah/Skripsi/Data_baru/maret/mar_nemo.nc'
+    'D:/Data/',
+    'D:/Data/',
+    'D:/Data/',
+    'D:/Data/'
 ]
 
 output_directory = 'D:/Kuliah/Skripsi/Data_baru/maret/'
@@ -213,7 +213,7 @@ interpolated_data = xr.DataArray(interpolated_values, coords=[T, Y, X], dims=['T
 print("Number of NaN values after IDW interpolation:", interpolated_data.isnull().sum().item())
 
 # Save the interpolated data to a new NetCDF file
-interpolated_data.to_netcdf('D:/Data/chirps_fix.nc')
+interpolated_data.to_netcdf('D:/Data/.nc')
 print("IDW interpolation completed, and data saved to chirps_fix.nc")
 
 ####################################################################################################################################################
@@ -330,7 +330,7 @@ for month in months:
         
         # Define the output file name based on the input file name
         model_name = os.path.basename(file).replace('.nc', '')
-        output_file = f'D:/Kuliah/Skripsi/Data_baru/{month}/ds_{model_name}.nc'
+        output_file = f'D:/{month}/ds_{model_name}.nc'
         
         # Save the interpolated results to a new NetCDF file
         ds_new.to_netcdf(output_file)
