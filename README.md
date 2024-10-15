@@ -22,6 +22,7 @@ To evaluate the performance of multiple climate models for SPI prediction, focus
 - **Root Mean Square Error (RMSE)**
 - **Standard Deviation (stdev)**
 - **Correlation Coefficient**
+- **Skill Score**
 
 ## Methodology
 
