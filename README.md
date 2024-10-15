@@ -51,19 +51,19 @@ To evaluate the performance of multiple climate models for SPI prediction, focus
 - **Taylor Diagrams**: Compare model performance in terms of RMSE, standard deviation, and correlation.
 - **Spatio-Temporal Visualizations**: RMSE, standard deviation, correlation, and skill score plotted over time and space to assess model accuracy and behavior across different regions and periods.
 
+## Visualizations
 1. **Taylor Diagram**
    
    <div align="center">
       <img src="https://github.com/user-attachments/assets/037a6ef7-5942-4309-9faf-b5ffad560c62" alt="RMSE" width="800" />
    </div>
 
-
 3. **RMSE**
 
    <div align="center">
       <img src="https://github.com/user-attachments/assets/5402fffd-72c3-4164-92e7-4a24b32a7757" alt="RMSE" width="800" />
    </div>
-   
+
 4. **Standard Deviation**
 
    <div align="center">
@@ -88,3 +88,19 @@ To evaluate the performance of multiple climate models for SPI prediction, focus
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/rizkyngrh23/NMME-CNN-training.git
+
+2. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+
+3. **Run Data Preprocessing**
+   ```bash
+   python preprocess.py
+
+4. **Train the CNN Model**
+   ```bash
+   python training.py
+
+5. **Evaluate the Model using Taylor Diagram**
+   ```bash
+   python taylor_diagram.py
