@@ -46,6 +46,42 @@ To evaluate the performance of multiple climate models for SPI prediction, focus
 - **Basemap**: For spatial visualizations.
 - **NetCDF4**: Handling of NMME model data in NetCDF format.
 
+## Results
+- **Taylor Diagrams**: Compare model performance in terms of RMSE, standard deviation, and correlation.
+- **Spatio-Temporal Visualizations**: RMSE, standard deviation, correlation, and skill score plotted over time and space to assess model accuracy and behavior across different regions and periods.
+
+1. **Taylor Diagram**
+   
+   <div align="center">
+      <img src="https://github.com/user-attachments/assets/037a6ef7-5942-4309-9faf-b5ffad560c62" alt="RMSE" width="800" />
+   </div>
+
+
+3. **RMSE**
+
+   <div align="center">
+      <img src="https://github.com/user-attachments/assets/5402fffd-72c3-4164-92e7-4a24b32a7757" alt="RMSE" width="800" />
+   </div>
+   
+4. **Standard Deviation**
+
+   <div align="center">
+      <img src="https://github.com/user-attachments/assets/6faba311-14b2-4289-b2e8-9d00fbe6e163" alt="RMSE" width="800" />
+   </div>
+
+5. **Spatial Correlation**
+
+    <div align="center">
+      <img src="https://github.com/user-attachments/assets/d3db7ad9-071f-4786-a121-c471b39021b9" alt="RMSE" width="800" />
+   </div>
+    
+6. **Skill Score**
+
+   <div align="center">
+      <img src="https://github.com/user-attachments/assets/bc1d58fc-bbd1-4490-a55f-f26dc51b1d0a" alt="RMSE" width="800" />
+   </div>
+
+
 ## Usage
 
 1. **Clone the Repository**:
