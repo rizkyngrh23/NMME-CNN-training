@@ -115,13 +115,13 @@ def accumulate_per_lead(model_files, output_directory):
 
 # Example usage
 model_files = [
-    'D:/Data/',
-    'D:/Data/',
-    'D:/Data/',
-    'D:/Data/'
+    'D:/Data/CanSIPSv2/'
+    'D:/Data/CanCM4i/',
+    'D:/Data/CanSIPS-IC3/'
+    'D:/Data/GEM-NEMO/'
 ]
 
-output_directory = 'D:/Kuliah/Skripsi/Data_baru/maret/'
+output_directory = 'D:/Output/'
 accumulate_per_lead(model_files, output_directory)
 
 ####################################################################################################################################################
@@ -164,7 +164,7 @@ def idw_interpolation(x, y, values, xi, yi, power=2):
         dist = distances[i]
         vals = values[indices[i]]
         # Avoid division by zero by replacing 0 with a small number
-        dist = np.where(dist == 0, 1e-10, dist)
+        dist = np.where(dist == 0, 1e-10, dis)
         weights = 1 / (dist ** power)
         interpolated_values[i] = np.sum(weights * vals) / np.sum(weights)
     
